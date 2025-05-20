@@ -12,7 +12,10 @@ Github帐号；cloudflare账号；域名（收费或免费域名）
 
 2. 配置github Actions: 在仓库目录下创建.github/workflows文件夹，并创建upbpb.yml文件。2025.4.25更新可使用！
 
-可随官方自动更新的工作流，可在CF上部署：
+可随官方自动更新的工作流，可在CF上部署：[upbpb.yml]()
+
+<details>
+<summary>点击展开/收起</summary>
 
 ```
 name: Auto Update Worker
@@ -98,6 +101,7 @@ jobs:
           commit_message: "🔄 自动同步 Worker 版本: ${{ steps.check_update.outputs.tag_name || '未知' }}"
           commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
 ```
+</details>
 
 (Gihub Action来源：Hans汉斯)
 #### Cloudflare 部署
@@ -121,21 +125,21 @@ BPB面板设置
 
 ##### 常用IP获取方式cleanIP/优选IP：
 
-地址1：https://www.wetest.vip/page/cloudflare/address_v4.html
+[地址1：](https://www.wetest.vip/page/cloudflare/address_v4.html)
 
-地址2：https://ipdb.030101.xyz/
+[地址2：](https://ipdb.030101.xyz/)
 
-地址3：https://stock.hostmonit.com/CloudFlareYes
+[地址3：](https://stock.hostmonit.com/CloudFlareYes)
 
-地址4：https://stock.hostmonit.com/CloudFlareYes
+[地址4：](https://stock.hostmonit.com/CloudFlareYes)
 
 ##### PROXYIP：
 
-点击进入1：https://ipdb.030101.xyz/bestproxy/
+[点击进入1：](https://ipdb.030101.xyz/bestproxy/)
 
-点击进入2：https://www.nslookup.io/domains/bpb.yousef.isegaro.com/dns-records/
+[点击进入2：](https://www.nslookup.io/domains/bpb.yousef.isegaro.com/dns-records/)
 
-节点测试
+
 
 (Gihub Action来源：Hans汉斯)
 
